@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -9,11 +8,11 @@ const Footer: React.FC = () => {
         {/* Coluna 1: Logo e Descrição */}
         <div className="flex flex-col items-start">
           <Link to="/">
-            <img
+            {/* <img
               src={Logo}
               alt="Logo Psique & Mente"
               className="h-10 w-auto mb-4 invert"
-            />
+            /> */}
           </Link>
           <p className="text-gray-400 text-sm">
             Seu espaço de cuidado psicológico e bem-estar. Oferecemos terapias
