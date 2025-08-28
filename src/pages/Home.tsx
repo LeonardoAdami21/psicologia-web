@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "../components/ui/Button";
 import Card from "../components/shared/Card";
+import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="container mx-auto py-8 px-4">
       {/* Seção Hero */}
@@ -15,13 +17,13 @@ const Home: React.FC = () => {
           atendimento presencial e online, para convênios e particulares.
         </p>
         <div className="flex justify-center space-x-4">
-          <Button size="large" onClick={() => alert("Ver Serviços")}>
+          <Button size="large" onClick={() => navigate("/services")}>
             Conheça Nossos Serviços
           </Button>
           <Button
             variant="outline"
             size="large"
-            onClick={() => alert("Agendar Agora")}
+            onClick={() => navigate("/booking")}
           >
             Agendar Agora
           </Button>
