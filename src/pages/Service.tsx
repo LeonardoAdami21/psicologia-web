@@ -1,8 +1,10 @@
 import React from "react";
 import Card from "../components/shared/Card";
 import Button from "../components/ui/Button";
+import { useNavigate } from "react-router-dom";
 
 const Services: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="container mx-auto py-8 px-4">
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-10">
@@ -75,7 +77,7 @@ const Services: React.FC = () => {
           nosso sistema online ou entrando em contato diretamente. Aceitamos
           convênios como Unimed e também oferecemos atendimento particular.
         </p>
-        <Button size="large" onClick={() => alert("Ir para o Agendamento")}>
+        <Button size="large" onClick={() => navigate("/booking")}>
           Ir para Agendamento
         </Button>
       </section>
