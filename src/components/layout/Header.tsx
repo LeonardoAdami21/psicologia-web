@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Precisaremos instalar react-router-dom
+import { Link, useNavigate } from "react-router-dom"; // Precisaremos instalar react-router-dom
 import Button from "../ui/Button";
 //import Logo from "../../assets/logo.svg"; // Certifique-se de ter um logo SVG ou altere para PNG/JPG
 
@@ -11,6 +11,8 @@ const Header: React.FC = () => {
     { name: "FAQ", path: "/faq" },
     { name: "Contato", path: "/contact" },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <header className="bg-white shadow-md py-4 px-6 md:px-12 flex justify-between items-center fixed w-full z-50 top-0">
@@ -39,7 +41,7 @@ const Header: React.FC = () => {
       </nav>
       <div className="flex items-center space-x-4">
         <Button
-          onClick={() => alert("Agendar Consulta")}
+          onClick={() => navigate("/booking")}
           className="hidden md:block"
         >
           Agendar Consulta

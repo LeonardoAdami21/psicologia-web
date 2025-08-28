@@ -6,6 +6,7 @@ import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Layout from "./components/layout/Layout";
+import Booking from "./pages/Booking";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/booking" element={<Booking />} />
           {/* Adicione outras rotas aqui conforme necessário, ex: /agendamento */}
         </Routes>
       </Layout>
