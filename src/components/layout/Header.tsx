@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Precisaremos instalar react-router-dom
 import Button from "../ui/Button";
-import Logo from "../../assets/logo.svg"; // Certifique-se de ter um logo SVG ou altere para PNG/JPG
+//import Logo from "../../assets/logo.svg"; // Certifique-se de ter um logo SVG ou altere para PNG/JPG
 
 const Header: React.FC = () => {
   const navItems = [
@@ -16,11 +16,11 @@ const Header: React.FC = () => {
     <header className="bg-white shadow-md py-4 px-6 md:px-12 flex justify-between items-center fixed w-full z-50 top-0">
       <div className="flex items-center">
         <Link to="/" className="flex items-center">
-          <img
+          {/* <img
             src={Logo}
             alt="Logo Psique & Mente"
             className="h-10 w-auto mr-3"
-          />
+          /> */}
           <span className="text-xl font-bold text-gray-800 hidden md:block">
             Psique & Mente
           </span>
